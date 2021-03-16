@@ -41,7 +41,7 @@ function Unsold(props) {
             props.deletePlayer(title)
           }}
         >
-          <Icon name="remove" size={20} color="firebric" />
+          <Icon name="remove" size={20}/>
         </Pressable>
         <Pressable
           style={[styles.deleteButton]}
@@ -51,7 +51,7 @@ function Unsold(props) {
             setPlayerNewName(title)
           }}
         >
-          <Icon name="edit" size={20} color="firebric" />
+          <Icon name="edit" size={20}/>
         </Pressable>
       </View>
     </View>
@@ -66,7 +66,7 @@ function Unsold(props) {
           props.deleteTeam(title)
         }}
       >
-        <Icon name="remove" size={20} color="firebric" />
+        <Icon name="remove" size={20}/>
       </Pressable>
     </View>
   )
