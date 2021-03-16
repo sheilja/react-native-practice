@@ -21,15 +21,19 @@ export default function App() {
   const [teams, setTeams] = useState([])
 
   const addPlayers = (text) => {
+    if(text){
     const oldElements = players
     const temp = text.split(",")
     setPlayers(oldElements.concat(temp))
+    }
   }
 
   const addTeams = (text) => {
+    if(text){
     const oldElements = teams
     const temp = text.split(",")
     setTeams(oldElements.concat(temp))
+    }
   }
 
   const editPlayerName = (oldName, newName) => {

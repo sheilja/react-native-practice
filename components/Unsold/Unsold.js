@@ -134,6 +134,7 @@ function Unsold(props) {
                 style={[styles.editButton, styles.buttonClose]}
                 onPress={() => {
                   props.addPlayers(playersName)
+                  setPlayersName("")
                 }}
               >
                 <Text style={styles.textStyle}>Create Player</Text>
@@ -149,6 +150,7 @@ function Unsold(props) {
                 style={[styles.editButton, styles.buttonClose]}
                 onPress={() => {
                   props.addTeams(teamsName)
+                  setTeamsName("")
                 }}
               >
                 <Text style={styles.textStyle}>Create Teams</Text>
